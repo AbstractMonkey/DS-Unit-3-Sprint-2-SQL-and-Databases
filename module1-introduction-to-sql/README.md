@@ -54,7 +54,10 @@ following questions:
 - How many total Characters are there?
   - 302
 - How many of each specific subclass?
-  - 
+  - Cleric: 68
+  - Fighter: 75
+  - Mage: 108
+  - Thief: 51
 - How many total Items?
   - 
 - How many of the Items are weapons? How many are not?

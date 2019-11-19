@@ -53,24 +53,24 @@ following questions:
 
 - How many total Characters are there?
   - SELECT COUNT(character_id) FROM charactercreator_character;
-  - 302
+    - 302
 - How many of each specific subclass?
   - SELECT COUNT(character_ptr_id) from charactercreator_cleric;
-  - Cleric: 75
+    - Cleric: 75
   - SELECT COUNT(character_ptr_id) from charactercreator_fighter;
-  - Fighter: 68
+    - Fighter: 68
   - SELECT COUNT(character_ptr_id) from charactercreator_mage;
-  - Mage: 108
+    - Mage: 108
   - SELECT COUNT(character_ptr_id) from charactercreator_thief;
-  - Thief: 51
+    - Thief: 51
   - SELECT COUNT(mage_ptr_id) from charactercreator_necromancer;
-  - Necromancer: 11
+    - Necromancer: 11
 - How many total Items?
   - SELECT COUNT(item_id) from armory_item;
-  - 174
+    - 174
 - How many of the Items are weapons? How many are not?
   - SELECT COUNT(item_ptr_id) from armory_weapon;
-  - 37
+    - 37
 - How many Items does each character have? (Return first 20 rows)
   - 1|3
 - How many Weapons does each character have? (Return first 20 rows)

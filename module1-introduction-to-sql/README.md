@@ -60,8 +60,10 @@ following questions:
   - Thief: 51
   - Necromancer: 11
 - How many total Items?
+  - SELECT COUNT(item_id) from armory_item;
   - 174
 - How many of the Items are weapons? How many are not?
+  - SELECT COUNT(item_ptr_id) from armory_weapon;
   - 37
 - How many Items does each character have? (Return first 20 rows)
   - 1|3

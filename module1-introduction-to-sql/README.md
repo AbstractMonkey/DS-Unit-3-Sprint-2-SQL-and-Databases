@@ -85,9 +85,18 @@ following questions:
   - LIMIT 20;
 
 - On average, how many Items does each Character have?
-  - 
+  - SELECT AVG(items) FROM (
+  - SELECT character_id,
+  - COUNT(item_id) AS items 
+  - FROM charactercreator_character_inventory 
+  - GROUP BY character_id);
+  
 - On average, how many Weapons does each character have?
-  - 
+  - SELECT AVG(numweps) FROM (
+  - SELECT COUNT(item_id) as numweps
+  - FROM charactercreator_character_inventory 
+  - WHERE item_id IN (SELECT item_ptr_id FROM armory_weapon)
+  - GROUP BY character_id);
 
 You do not need all the tables - in particular, the `account_*`, `auth_*`,
 `django_*`, and `socialaccount_*` tables are for the application and do not have

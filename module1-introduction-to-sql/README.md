@@ -79,10 +79,10 @@ following questions:
 
 - How many Weapons does each character have? (Return first 20 rows)
   - SELECT COUNT(item_id) 
-    FROM charactercreator_character_inventory 
-    WHERE item_id IN (SELECT item_ptr_id FROM armory_weapon)
-    GROUP BY character_id
-    LIMIT 20;
+  - FROM charactercreator_character_inventory 
+  - WHERE item_id IN (SELECT item_ptr_id FROM armory_weapon)
+  - GROUP BY character_id
+  - LIMIT 20;
 
 - On average, how many Items does each Character have?
   - 
